@@ -12,8 +12,8 @@
 
 import json
 
-def __handler__(event, context=None):
-
+def __handler__(event=None , context=None):
+    
     # TODO: Implement action code here..
 
     result = {
