@@ -4,8 +4,8 @@ FROM python:3.9.10
 COPY . /home/metrograph
 
 # Dependencies Installation
-WORKDIR /home/metrograph/action
-RUN pip install --no-cache-dir -r requirements.txt
+WORKDIR /home/metrograph
+RUN pip install --no-cache-dir -r /home/metrograph/action/requirements.txt
 
 # Running Action
-ENTRYPOINT ["python", "gateway.py"]
+ENTRYPOINT ["python", "/home/metrograph/gateway.py"]
