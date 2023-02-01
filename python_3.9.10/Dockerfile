@@ -9,6 +9,7 @@ RUN pip install --no-cache-dir -r /home/metrograph/action/requirements.txt
 
 # ENV Configuration
 ENV PYTHONDONTWRITEBYTECODE=1
+ENV PYTHONPATH /home/metrograph/action
 
 # Running Action
 ENTRYPOINT ["python", "gateway.py"]
